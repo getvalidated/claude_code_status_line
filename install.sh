@@ -22,7 +22,14 @@ if [ ${#missing[@]} -gt 0 ]; then
   if command -v brew &>/dev/null; then
     brew install "${missing[@]}"
   elif command -v apt-get &>/dev/null; then
-    sudo apt-get update && sudo apt-get install -y "${missing[@]}"
+    if [ "$(id -u)" -eq 0 ]; then
+      apt-get update && apt-get install -y "${missing[@]}"
+    elif command -v sudo &>/dev/null; then
+      sudo apt-get update && sudo apt-get install -y "${missing[@]}"
+    else
+      echo "ERROR: Not running as root and sudo is not available. Please install manually: ${missing[*]}"
+      exit 1
+    fi
   else
     echo "ERROR: Could not find brew or apt-get. Please install manually: ${missing[*]}"
     exit 1
