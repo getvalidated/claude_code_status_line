@@ -20,6 +20,10 @@ A custom statusline and session cost tracker for [Claude Code](https://docs.anth
 - Session duration, working directory, and model info
 - Running total saved to `~/.claude/total_cost.txt`
 
+> [!WARNING]
+> This project assumes your terminal font supports **Powerline symbols**.
+> Tested and working with [JetBrains Mono](https://www.jetbrains.com/lp/mono/).
+
 ## Install
 
 ```bash
