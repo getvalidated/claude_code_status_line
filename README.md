@@ -1,5 +1,8 @@
 # Claude Code Statusline & Cost Tracker
 
+<img width="100%" alt="screenshot" src="https://github.com/user-attachments/assets/317e225c-1b18-4f57-b359-04be4df44665" />
+
+
 A custom statusline and session cost tracker for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
 ## What you get
