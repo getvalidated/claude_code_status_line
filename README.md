@@ -5,6 +5,28 @@
 
 A custom statusline and session cost tracker for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
+## One-liner install
+
+> [!WARNING]
+> This project assumes your terminal font supports **Powerline symbols**.
+> Tested and working with [JetBrains Mono](https://www.jetbrains.com/lp/mono/).
+
+```bash
+git clone https://github.com/getvalidated/claude_code_status_line.git /tmp/claude_code_status_line && bash /tmp/claude_code_status_line/install.sh
+```
+
+Then restart Claude Code.
+
+## Install from source 
+
+```bash
+git clone https://github.com/getvalidated/claude_code_status_line.git
+cd claude_code_status_line
+bash install.sh
+```
+
+Then restart Claude Code.
+
 ## What you get
 
 **Statusline** — a rich two-line status bar showing:
@@ -19,26 +41,6 @@ A custom statusline and session cost tracker for [Claude Code](https://docs.anth
 - Per-session cost in USD (supports all Claude models + fast mode pricing)
 - Session duration, working directory, and model info
 - Running total saved to `~/.claude/total_cost.txt`
-
-> [!WARNING]
-> This project assumes your terminal font supports **Powerline symbols**.
-> Tested and working with [JetBrains Mono](https://www.jetbrains.com/lp/mono/).
-
-## Install
-
-```bash
-git clone https://github.com/getvalidated/claude_code_status_line.git
-cd claude_code_status_line
-bash install.sh
-```
-
-Then restart Claude Code.
-
-## One-liner install
-
-```bash
-git clone https://github.com/getvalidated/claude_code_status_line.git /tmp/claude_code_status_line && bash /tmp/claude_code_status_line/install.sh
-```
 
 ## Dependencies
 
